@@ -5,23 +5,21 @@ using System;
 
 [RequireComponent(typeof(RawImage))]    
 public class MovieStart : MonoBehaviour {
-    //public MovieTexture movieTex;
+    public MovieTexture movieTex;
     public int SceneToLoad = 1;
     public float timetowait = 1.03f;
     private float i = 0;
 
 	// Use this for initialization
 	void Start () {
-        Handheld.PlayFullScreenMovie("StreamingAssets/IntroMovie.mp4");
+        Handheld.PlayFullScreenMovie("IntroMovie.mp4");
         // only use this script if it has movie texture assigned to this script
-        //if (movieTex == null) return;
+        if (movieTex == null) return;
         // play the movie when possible
-        //movieTex.Play();
+        movieTex.Play();
         // invoke a call after the movie is done.
         //float t = movieTex.duration;
-        //Debug.Log(t);
         //Invoke("ChangeScene", movieTex.duration);
-
     }
 
     private void FixedUpdate()
@@ -35,8 +33,16 @@ public class MovieStart : MonoBehaviour {
     }
 
     // change the scene
-    void ChangeScene()
+    public void ChangeScene()
     {
-        SceneManager.LoadScene(SceneToLoad);
+        //if (!PlayerPrefs.HasKey("Unlock"))
+        //{
+            SceneManager.LoadScene(1);
+        //}
+        //else
+        //{
+        //    SceneManager.LoadScene("Menu");
+        //}
+        
     }
 }
