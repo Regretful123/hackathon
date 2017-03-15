@@ -12,6 +12,7 @@ public class MovieStart : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Handheld.PlayFullScreenMovie("StreamingAssets/IntroMovie.mp4");
         // only use this script if it has movie texture assigned to this script
         //if (movieTex == null) return;
         // play the movie when possible
