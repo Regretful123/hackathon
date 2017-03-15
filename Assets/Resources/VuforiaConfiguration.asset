@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: AYPL7iv/////AAAAGfZwwA8lxUKfp3Ngzp6u4/EPOT6IrP4Dkb0usZVRA3HD9EiPvatYjk+cX8ioCZ1PMbn4A+GLSopdQYHvRkp6ZlSOxrnqVFfk/lQdAnIU171+2sout7x2jDtEUG3YJ1p2Gs2Z95YwNtPZCgjRKEOGZLFH5gs6NhEt3Ob7Cz6Lv0KIUD+e8MsJV4GG7NWs4agqoUpljQYLes03teCbZcRCuIw27RIyllfX2w8soOTMSV0QtbcZ3puBjl35EjMhRIAsZ6CWDrnImnMVNsZqYCdkT3oud2rF1puAts3SoJWnl7+Lj+11vvOmQV1Zkzse8q18EmUSknqcZk6zd7WQXIqxJgXQioww6K+1vx7nzAG+Bzt+
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -43,8 +43,14 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   databaseLoad:
-    dataSetsToLoad: []
-    dataSetsToActivate: []
+    dataSetsToLoad:
+    - HoloCubeByMerge
+    - BlackTeeShirt_OT
+    - BlackTeeShirt
+    dataSetsToActivate:
+    - BlackTeeShirt
+    - BlackTeeShirt_OT
+    - HoloCubeByMerge
   videoBackground:
     clippingMode: 0
     matteShader: {fileID: 4800000, guid: f84e93cca971cda47a225f4c6a4156c9, type: 3}

@@ -1303,7 +1303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bdb0ad44001d3429a856c67a810269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movieTex: {fileID: 15200000, guid: e4318d38b21b16e458f37455b3f16532, type: 3}
   SceneToLoad: 1
   timetowait: 73
 --- !u!95 &1383088765
@@ -1383,7 +1382,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 15200000, guid: e4318d38b21b16e458f37455b3f16532, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1537,7 +1536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1682639348
 GameObject:
