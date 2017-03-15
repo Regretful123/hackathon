@@ -5,7 +5,7 @@ using System;
 
 [RequireComponent(typeof(RawImage))]    
 public class MovieStart : MonoBehaviour {
-    public MovieTexture movieTex;
+    //public MovieTexture movieTex;
     public int SceneToLoad = 1;
     public float timetowait = 1.03f;
     private float i = 0;
@@ -14,9 +14,9 @@ public class MovieStart : MonoBehaviour {
 	void Start () {
         Handheld.PlayFullScreenMovie("IntroMovie.mp4");
         // only use this script if it has movie texture assigned to this script
-        if (movieTex == null) return;
+        //if (movieTex == null) return;
         // play the movie when possible
-        movieTex.Play();
+        //movieTex.Play();
         // invoke a call after the movie is done.
         //float t = movieTex.duration;
         //Invoke("ChangeScene", movieTex.duration);
